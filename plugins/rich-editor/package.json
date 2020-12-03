@@ -1,19 +1,25 @@
 {
-    "name": "@vanilla/addon-rich-editor",
-    "version": "3.0.0",
-    "private": true,
-    "workspaces": {
-        "nohoist": [
-            "quill",
-            "quill-delta",
-            "parchment"
-        ]
-    },
-    "dependencies": {
-        "quill": "https://github.com/vanilla/quill.git#1.3.7",
-        "@vanilla/utils": "*",
-        "@vanilla/library": "*",
-        "@vanilla/dom-utils": "*",
-        "@vanilla/react-utils": "*"
-    }
+  "name": "@vanilla/addon-rich-editor",
+  "version": "3.0.0",
+  "private": true,
+  "workspaces": {
+    "nohoist": [
+      "quill",
+      "quill-delta",
+      "parchment"
+    ]
+  },
+  "dependencies": {
+    "quill": "https://github.com/vanilla/quill.git#1.3.7",
+    "@vanilla/utils": "*",
+    "@vanilla/library": "*",
+    "@vanilla/dom-utils": "*",
+    "@vanilla/react-utils": "*",
+    "snyk": "^1.434.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }

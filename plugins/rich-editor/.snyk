@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - quill > extend:
+        patched: '2020-12-03T13:21:12.395Z'
+    - quill > quill-delta > extend:
+        patched: '2020-12-03T13:21:12.395Z'
