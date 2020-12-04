@@ -26,6 +26,6 @@
     },
     "homepage": "https://github.com/vanilla/themes/blob/feature/boilerplate-theme/vanilla-theme-boilerplate/guide.md",
     "dependencies": {
-        "fs-extra": "^7.0.0"
+        "fs-extra": "^7.0.1"
     }
 }
